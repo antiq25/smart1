@@ -7,71 +7,85 @@
 <!-- Mirrored from seantheme.com/admetro/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Sep 2023 08:35:19 GMT -->
 <head>
 <meta charset="utf-8" />
-<title>Admetro | Dashboard</title>
+<title>show my service | dashboard</title>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 <meta content name="description" />
 <meta content name="author" />
+<style>
+  .imgr-flo {
+    width: 55px;
+    height: 45px;
+    display:  block;
+
+  }
+</style>
 
 <link href="assets/css/app.min.css" rel="stylesheet" />
 
+
+<link href="assets/plugins/jvectormap/jquery-jvectormap.css" rel="stylesheet" />
+<script src="../jquery.min.js"></script>
+
 </head>
 <body>
-
-<div id="app" class="app app-header-fixed app-sidebar-fixed">
-
-<header id="header" class="app-header">
-
-<button type="button" class="navbar-toggle navbar-toggle-minify" data-click="sidebar-minify">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-
-
-<div class="navbar-header">
-<a href="index-2.html" class="navbar-brand">
-admetro
-</a>
-<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
+  
+  <div id="app" class="app app-header-fixed app-sidebar-fixed">
+    
+    <header id="header" class="app-header">
+      
+      <button type="button" class="navbar-toggle navbar-toggle-minify" data-click="sidebar-minify">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      
+      <div class="navbar-header">
+        <a href="index-2.html" class="navbar-brand">
+          <img src="service.jpg" alt="Logo" class="imgr-flo">
+    Show My Service
+  </a>
+  <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
 </div>
+
 
 
 <ul class="navbar-nav navbar-right">
-<li class="nav-item">
-<a href="#" data-toggle="search-bar" class="nav-link">
-<i class="fa fa-search nav-icon"></i>
-</a>
-</li>
-<li class="nav-item dropdown">
-<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
-<i class="far fa-bell nav-icon"></i>
-<span class="nav-label">3</span>
-</a>
+  <li class="nav-item">
+    <a href="#" data-toggle="search-bar" class="nav-link">
+      <i class="fa fa-search nav-icon"></i>
+    </a>
+  </li>
+  <li class="nav-item dropdown">
+    <a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+      <i class="far fa-bell nav-icon"></i>
+      <span class="nav-label">3</span>
+    </a>
 <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0 pb-0">
-<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+  <li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+  <li class="dropdown-message">
+    <a href="#">
+      <div class="icon"><i class="fab fa-apple bg-primary"></i></div>
+      <div class="info">
+        <h4 class="title">App Store <span class="time">Just now</span></h4>
+        <p class="desc">Your iOS application has been approved</p>
+      </div>
+    </a>
+  </li>
+  <li class="dropdown-message">
+    <a href="#">
+      <div class="icon"><i class="fab fa-android bg-success"></i></div>
+      <div class="info">
+        <h4 class="title">Google Play <span class="time">5 min ago</span></h4>
+        <p class="desc">Your android application has been approved</p>
+      </div>
+    </a>
+  </li>
 <li class="dropdown-message">
-<a href="#">
-<div class="icon"><i class="fab fa-apple bg-primary"></i></div>
-<div class="info">
-<h4 class="title">App Store <span class="time">Just now</span></h4>
-<p class="desc">Your iOS application has been approved</p>
-</div>
-</a>
-</li>
-<li class="dropdown-message">
-<a href="#">
-<div class="icon"><i class="fab fa-android bg-success"></i></div>
-<div class="info">
-<h4 class="title">Google Play <span class="time">5 min ago</span></h4>
-<p class="desc">Your android application has been approved</p>
-</div>
-</a>
-</li>
-<li class="dropdown-message">
-<a href="#">
-<div class="icon"><i class="fab fa-github bg-muted"></i></div>
+  <a href="#">
+    <div class="icon"><i class="fab fa-github bg-muted"></i></div>
 <div class="info">
 <h4 class="title">Github <span class="time">12 min ago</span></h4>
 <p class="desc">Error with notifications from Private Repos</p>
@@ -80,73 +94,73 @@ admetro
 </li>
 <li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
 <li class="dropdown-message">
-<a href="#">
-<div class="icon"><i class="fa fa-envelope bg-purple"></i></div>
-<div class="info">
-<h4 class="title">Gmail <span class="time">12:50pm</span></h4>
-<p class="desc">You have 2 unread email</p>
-</div>
-</a>
+  <a href="#">
+    <div class="icon"><i class="fa fa-envelope bg-purple"></i></div>
+    <div class="info">
+      <h4 class="title">Gmail <span class="time">12:50pm</span></h4>
+      <p class="desc">You have 2 unread email</p>
+    </div>
+  </a>
 </li>
 <li class="dropdown-message">
-<a href="#">
-<div class="icon"><div class="img" style="background-image: url(assets/img/user-2.jpg)"></div></div>
-<div class="info">
-<h4 class="title">Corey <span class="time">10:20am</span></h4>
-<p class="desc">There's so much room for activities!</p>
-</div>
-</a>
+  <a href="#">
+    <div class="icon"><div class="img" style="background-image: url(assets/img/user-2.jpg)"></div></div>
+    <div class="info">
+      <h4 class="title">Corey <span class="time">10:20am</span></h4>
+      <p class="desc">There's so much room for activities!</p>
+    </div>
+  </a>
 </li>
 <li class="dropdown-message">
-<a href="#">
-<div class="icon"><i class="fab fa-twitter bg-gradient-aqua"></i></div>
-<div class="info">
-<h4 class="title">Twitter <span class="time">12:50pm</span></h4>
-<p class="desc">@sergiolucas: Most rain in the last two days: 85mm Gabo Island (March)</p>
-</div>
-</a>
+  <a href="#">
+    <div class="icon"><i class="fab fa-twitter bg-gradient-aqua"></i></div>
+    <div class="info">
+      <h4 class="title">Twitter <span class="time">12:50pm</span></h4>
+      <p class="desc">@sergiolucas: Most rain in the last two days: 85mm Gabo Island (March)</p>
+    </div>
+  </a>
 </li>
 </ul>
 </li>
 <li class="nav-item dropdown">
-<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
-<i class="fa fa-cog nav-icon"></i>
+  <a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+    <i class="fa fa-cog nav-icon"></i>
 </a>
 <ul class="dropdown-menu dropdown-menu-right dropdown-menu-md pt-0 pb-0">
-<li class="dropdown-header">Notifications Settings</li>
-<li class="dropdown-setting">
-<div class="icon"><i class="fa fa-envelope text-muted"></i></div>
-<div class="info">Email</div>
-<div class="option">
-<div class="switcher switcher-success">
-<input type="checkbox" name="setting_1" id="setting_1" checked />
-<label for="setting_1"></label>
-</div>
-</div>
-</li>
-<li class="dropdown-setting">
-<div class="icon"><i class="fa fa-desktop text-muted"></i></div>
-<div class="info">Desktop & Mobile</div>
-<div class="option">
-<div class="switcher switcher-success">
-<input type="checkbox" name="setting_2" id="setting_2" checked />
+  <li class="dropdown-header">Notifications Settings</li>
+  <li class="dropdown-setting">
+    <div class="icon"><i class="fa fa-envelope text-muted"></i></div>
+    <div class="info">Email</div>
+    <div class="option">
+      <div class="switcher switcher-success">
+        <input type="checkbox" name="setting_1" id="setting_1" checked />
+        <label for="setting_1"></label>
+      </div>
+    </div>
+  </li>
+  <li class="dropdown-setting">
+    <div class="icon"><i class="fa fa-desktop text-muted"></i></div>
+    <div class="info">Desktop & Mobile</div>
+    <div class="option">
+      <div class="switcher switcher-success">
+        <input type="checkbox" name="setting_2" id="setting_2" checked />
 <label for="setting_2"></label>
 </div>
 </div>
 </li>
 <li class="dropdown-setting">
-<div class="icon"><i class="fa fa-comment-alt text-muted"></i></div>
-<div class="info">Text message</div>
-<div class="option">
-<div class="switcher switcher-success">
-<input type="checkbox" name="setting_3" id="setting_3" />
-<label for="setting_3"></label>
-</div>
-</div>
+  <div class="icon"><i class="fa fa-comment-alt text-muted"></i></div>
+  <div class="info">Text message</div>
+  <div class="option">
+    <div class="switcher switcher-success">
+      <input type="checkbox" name="setting_3" id="setting_3" />
+      <label for="setting_3"></label>
+    </div>
+  </div>
 </li>
 <li class="dropdown-header">Privacy Settings</li>
 <li class="dropdown-setting">
-<div class="icon"><i class="fa fa-list-ul text-muted"></i></div>
+  <div class="icon"><i class="fa fa-list-ul text-muted"></i></div>
 <div class="info">Public friends list</div>
 <div class="option">
 <div class="switcher switcher-success">
@@ -156,107 +170,96 @@ admetro
 </div>
 </li>
 <li class="dropdown-setting">
-<div class="icon"><i class="fa fa-user-secret text-muted"></i></div>
-<div class="info">Public profile page</div>
-<div class="option">
-<div class="switcher switcher-success">
-<input type="checkbox" name="setting_5" id="setting_5" checked />
-<label for="setting_5"></label>
-</div>
-</div>
+  <div class="icon"><i class="fa fa-user-secret text-muted"></i></div>
+  <div class="info">Public profile page</div>
+  <div class="option">
+    <div class="switcher switcher-success">
+      <input type="checkbox" name="setting_5" id="setting_5" checked />
+      <label for="setting_5"></label>
+    </div>
+  </div>
 </li>
 </ul>
 </li>
 <li class="nav-item dropdown">
-<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
-<span class="nav-img online">
-<img src="assets/img/user.jpg" alt />
-</span>
-<span class="d-none d-md-block">John Smith <b class="caret"></b></span>
-</a>
-<div class="dropdown-menu dropdown-menu-right">
-<a class="dropdown-item" href="#">Edit Profile</a>
-<a class="dropdown-item" href="#">Inbox</a>
-<a class="dropdown-item" href="#">Calendar</a>
-<a class="dropdown-item" href="#">Setting</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Log Out</a>
-</div>
+  <a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+    <span class="nav-img online">
+      <img src="adminpfp.jpg" alt />
+    </span>
+    <span class="d-none d-md-block">Austin <b class="caret"></b></span>
+  </a>
+  <div class="dropdown-menu dropdown-menu-right">
+    <a class="dropdown-item" href="#">Edit Profile</a>
+    <a class="dropdown-item" href="#">Inbox</a>
+    <a class="dropdown-item" href="#">Calendar</a>
+    <a class="dropdown-item" href="#">Setting</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Log Out</a>
+  </div>
 </li>
 </ul>
 
 
 <div class="navbar-search">
-<form action="#" method="POST" name="navbar_search_form">
-<div class="form-group">
-<div class="icon"><i class="fa fa-search"></i></div>
-<input type="text" class="form-control" id="header-search" placeholder="Search admetro..." />
-<div class="icon">
-<a href="#" data-dismiss="search-bar" class="right-icon"><i class="fa fa-times"></i></a>
-</div>
-</div>
-</form>
+  <form action="#" method="POST" name="navbar_search_form">
+    <div class="form-group">
+      <div class="icon"><i class="fa fa-search"></i></div>
+      <input type="text" class="form-control" id="header-search" placeholder="Search admetro..." />
+      <div class="icon">
+        <a href="#" data-dismiss="search-bar" class="right-icon"><i class="fa fa-times"></i></a>
+      </div>
+    </div>
+  </form>
 </div>
 
 </header>
 
 
 <sidebar id="sidebar" class="app-sidebar">
-
-<div data-scrollbar="true" data-height="100%">
-
-<ul class="nav">
-<li class="nav-profile">
-<div class="profile-img">
-<img src="assets/img/user.jpg" />
-</div>
-<div class="profile-info">
-<h4>John Smith</h4>
-<p>Frontend Developer</p>
-</div>
-</li>
-<li class="nav-divider"></li>
-<li class="nav-header">Navigation</li>
-<li class="active">
-<a href="index-2.html">
-<span class="nav-icon"><i class="fa fa-th-large"></i></span>
-<span class="nav-text">Home</span>
-</a>
-</li>
+  
+  <div data-scrollbar="true" data-height="100%">
+    
+    <ul class="nav">
+      <li class="nav-profile">
+        <div class="profile-img">
+          <img src="adminpfp.jpg" />
+        </div>
+        <div class="profile-info">
+          <h4>Show My Service</h4>
+          <p>Admin Account</p>
+        </div>
+      </li>
+      <li class="nav-divider"></li>
+      <li class="nav-header">Navigation</li>
+      <li class="active">
+        <a href="index-2.html">
+          <span class="nav-icon"><i class="fa fa-th-large"></i></span>
+          <span class="nav-text">Home</span>
+        </a>
+      </li>
 <li>
-<a href="analytics.html">
-<span class="nav-icon"><i class="fa fa-chart-pie"></i></span>
-<span class="nav-text">Analytics</span>
-</a>
+  <a href="analytics.html">
+    <span class="nav-icon"><i class="fa fa-chart-pie"></i></span>
+    <span class="nav-text">Dashboard</span>
+  </a>
 </li>
-<li class="has-sub">
-<a href="#">
-<span class="nav-icon"><i class="fa fa-envelope"></i> </span>
-<span class="nav-text">Email <span class="nav-label">20+</span></span>
-<span class="nav-caret"><b class="caret"></b></span>
-</a>
-<ul class="nav-submenu">
-<li><a href="email_inbox.html">Inbox</a></li>
-<li><a href="email_compose.html">Compose</a></li>
-<li><a href="email_detail.html">Detail</a></li>
-</ul>
-</li>
+
 <li class="nav-divider"></li>
 <li class="nav-header">Components</li>
 <li>
-<a href="widgets.html">
-<span class="nav-icon"><i class="fa fa-qrcode bg-gradient-red text-white"></i></span>
-<span class="nav-text">Widgets</span>
-</a>
+  <a href="widgets.html">
+    <span class="nav-icon"><i class="fa fa-qrcode bg-gradient-red text-white"></i></span>
+    <span class="nav-text">Profile</span>
+  </a>
 </li>
 <li class="has-sub">
-<a href="#">
-<span class="nav-icon"><i class="fa fa-heart bg-gradient-orange text-white"></i></span>
-<span class="nav-text">UI Kits</span>
-<span class="nav-caret"><b class="caret"></b></span>
-</a>
-<ul class="nav-submenu">
-<li><a href="ui_bootstrap.html"><span class="nav-text">Bootstrap</span></a></li>
+  <a href="#">
+    <span class="nav-icon"><i class="fa fa-heart bg-gradient-orange text-white"></i></span>
+    <span class="nav-text">Manage Settings</span>
+    <span class="nav-caret"><b class="caret"></b></span>
+  </a>
+  <ul class="nav-submenu">
+    <li><a href="ui_bootstrap.html"><span class="nav-text">Bootstrap</span></a></li>
 <li><a href="ui_buttons.html"><span class="nav-text">Buttons</span></a></li>
 <li><a href="ui_typography.html"><span class="nav-text">Typography</span></a></li>
 <li><a href="ui_tabs_accordions.html"><span class="nav-text">Tabs & Accordions</span></a></li>
@@ -266,13 +269,13 @@ admetro
 </ul>
 </li>
 <li class="has-sub">
-<a href="#">
-<span class="nav-icon"><i class="fa fa-file-alt bg-gradient-orange text-white"></i></span>
-<span class="nav-text">Forms</span>
-<span class="nav-caret"><b class="caret"></b></span>
-</a>
+  <a href="#">
+    <span class="nav-icon"><i class="fa fa-file-alt bg-gradient-orange text-white"></i></span>
+    <span class="nav-text">Billing</span>
+    <span class="nav-caret"><b class="caret"></b></span>
+  </a>
 <ul class="nav-submenu">
-<li><a href="form_elements.html"><span class="nav-text">Form Elements</span></a></li>
+  <li><a href="form_elements.html"><span class="nav-text">Form Elements</span></a></li>
 <li><a href="form_plugins.html"><span class="nav-text">Form Plugins</span></a></li>
 <li><a href="form_wizards.html"><span class="nav-text">Wizards</span></a></li>
 <li><a href="form_jquery_file_upload.html"><span class="nav-text">File Upload</span></a></li>
@@ -280,42 +283,37 @@ admetro
 </ul>
 </li>
 <li class="has-sub">
-<a href="#">
+  <a href="#">
 <span class="nav-icon"><i class="fa fa-table bg-gradient-green text-white"></i></span>
-<span class="nav-text">Tables</span>
+<span class="nav-text">Getting Started</span>
 <span class="nav-caret"><b class="caret"></b></span>
 </a>
 <ul class="nav-submenu">
-<li><a href="table_basic.html"><span class="nav-text">Basic Tables</span></a></li>
+  <li><a href="table_basic.html"><span class="nav-text">Basic Tables</span></a></li>
 <li><a href="table_data.html"><span class="nav-text">DataTables</span></a></li>
 </ul>
 </li>
-<li>
-<a href="chart.html">
-<span class="nav-icon"><i class="fa fa-chart-bar bg-gradient-purple text-white"></i></span>
-<span class="nav-text">Chart</span>
-</a>
-</li>
+
 <li class="has-sub">
-<a href="#">
-<span class="nav-icon"><i class="fa fa-map-marker-alt bg-gradient-blue text-white"></i></span>
-<span class="nav-text">Map</span>
+  <a href="#">
+    <span class="nav-icon"><i class="fa fa-map-marker-alt bg-gradient-blue text-white"></i></span>
+    <span class="nav-text">Dashboard Options</span>
 <span class="nav-caret"><b class="caret"></b></span>
 </a>
 <ul class="nav-submenu">
-<li><a href="map_vector.html"><span class="nav-text">Vector Map</span></a></li>
+  <li><a href="map_vector.html"><span class="nav-text">Vector Map</span></a></li>
 <li><a href="map_google.html"><span class="nav-text">Google Map</span></a></li>
 </ul>
 </li>
 <li class="has-sub">
 <a href="#">
-<span class="nav-icon"><i class="fa fa-code-branch"></i></span>
-<span class="nav-text">Layout</span>
+  <span class="nav-icon"><i class="fa fa-code-branch"></i></span>
+  <span class="nav-text">Layout</span>
 <span class="nav-caret"><b class="caret"></b></span>
 </a>
 <ul class="nav-submenu">
-<li><a href="layout_starter.html"><span class="nav-text">Starter Page</span></a></li>
-<li><a href="layout_fixed_footer.html"><span class="nav-text">Fixed Footer</span></a></li>
+  <li><a href="layout_starter.html"><span class="nav-text">Starter Page</span></a></li>
+  <li><a href="layout_fixed_footer.html"><span class="nav-text">Fixed Footer</span></a></li>
 <li><a href="layout_full_width.html"><span class="nav-text">Full Width</span></a></li>
 <li><a href="layout_boxed_layout.html"><span class="nav-text">Boxed Layout</span></a></li>
 <li><a href="layout_full_height.html"><span class="nav-text">Full Height</span></a></li>
@@ -323,12 +321,12 @@ admetro
 </li>
 <li class="has-sub">
 <a href="#">
-<span class="nav-icon"><i class="fa fa-globe"></i></span>
-<span class="nav-text">Pages</span>
-<span class="nav-caret"><b class="caret"></b></span>
+  <span class="nav-icon"><i class="fa fa-globe"></i></span>
+  <span class="nav-text">More Settings</span>
+  <span class="nav-caret"><b class="caret"></b></span>
 </a>
 <ul class="nav-submenu">
-<li><a href="page_gallery.html"><span class="nav-text">Gallery</span></a></li>
+  <li><a href="page_gallery.html"><span class="nav-text">Gallery</span></a></li>
 <li><a href="page_coming_soon.html"><span class="nav-text">Coming Soon Page</span></a></li>
 <li><a href="page_search_results.html"><span class="nav-text">Search Results</span></a></li>
 <li><a href="page_404_error.html"><span class="nav-text">404 Error Page</span></a></li>
@@ -339,20 +337,20 @@ admetro
 <li class="nav-divider"></li>
 <li class="nav-header">Users</li>
 <li>
-<a href="profile.html">
-<span class="nav-icon"><i class="fa fa-user-circle"></i></span>
-<span class="nav-text">Profile</span>
-</a>
+  <a href="profile.html">
+    <span class="nav-icon"><i class="fa fa-user-circle"></i></span>
+    <span class="nav-text">Profile</span>
+  </a>
 </li>
 <li>
 <a href="calendar.html">
-<span class="nav-icon"><i class="fa fa-calendar"></i></span>
+  <span class="nav-icon"><i class="fa fa-calendar"></i></span>
 <span class="nav-text">Calendar</span>
 </a>
 </li>
 <li>
 <a href="settings.html">
-<span class="nav-icon"><i class="fa fa-cog"></i></span>
+  <span class="nav-icon"><i class="fa fa-cog"></i></span>
 <span class="nav-text">Settings</span>
 </a>
 </li>
@@ -364,24 +362,24 @@ admetro
 </li>
 <li class="has-sub">
 <a href="#">
-<span class="nav-icon"><i class="fa fa-list-ul"></i> </span>
+  <span class="nav-icon"><i class="fa fa-list-ul"></i> </span>
 <span class="nav-text">Menu Level</span>
 <span class="nav-caret"><b class="caret"></b></span>
 </a>
 <ul class="nav-submenu">
-<li class="has-sub">
+  <li class="has-sub">
 <a href="#">
-<span class="nav-text">Menu 1.1</span>
+  <span class="nav-text">Menu 1.1</span>
 <span class="nav-caret"><b class="caret"></b></span>
 </a>
 <ul class="nav-submenu">
-<li class="has-sub">
-<a href="#">
-<span class="nav-text">Menu 2.1</span>
+  <li class="has-sub">
+    <a href="#">
+      <span class="nav-text">Menu 2.1</span>
 <span class="nav-caret"><b class="caret"></b></span>
 </a>
 <ul class="nav-submenu">
-<li><a href="#"><span class="nav-text">Menu 3.1</span></a></li>
+  <li><a href="#"><span class="nav-text">Menu 3.1</span></a></li>
 <li><a href="#"><span class="nav-text">Menu 3.2</span></a></li>
 </ul>
 </li>
@@ -396,9 +394,9 @@ admetro
 <li class="nav-divider"></li>
 <li class="nav-header">Projects</li>
 <li class="nav-project">
-<a href="#">
+  <a href="#">
 <div class="project-icon">
-<i class="fa fa-mobile-alt"></i>
+  <i class="fa fa-mobile-alt"></i>
 </div>
 <div class="project-info">
 <h4 class="project-title">Mobile App Dev</h4>
@@ -410,14 +408,14 @@ admetro
 </a>
 </li>
 <li class="nav-project">
-<a href="#">
+  <a href="#">
 <div class="project-icon">
-<i class="fa fa-headphones"></i>
+  <i class="fa fa-headphones"></i>
 </div>
 <div class="project-info">
-<h4 class="project-title">New Audio Project</h4>
+  <h4 class="project-title">New Audio Project</h4>
 <div class="progress">
-<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 40%;" role="progressbar"></div>
+  <div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 40%;" role="progressbar"></div>
 </div>
 </div>
 <div class="project-percentage">40%</div>
@@ -425,8 +423,8 @@ admetro
 </li>
 <li class="nav-project">
 <a href="#">
-<div class="project-icon">
-<i class="fab fa-github"></i>
+  <div class="project-icon">
+    <i class="fab fa-github"></i>
 </div>
 <div class="project-info">
 <h4 class="project-title">Repository Settings</h4>
@@ -445,180 +443,82 @@ admetro
 
 </sidebar>
 
-
 <div id="content" class="app-content">
 
-<h1 class="page-header">
-Dashboard <small>overview, analytics & report</small>
+  <h1 class="page-header">
+Analytics <small>stats, overview & performance</small>
 </h1>
 
 
 <div class="row">
-
-<div class="col-xl-8 col-sm-12">
-
-<div class="widget-card widget-card-inverse">
-<div class="widget-card-col col-12 col-lg-6">
-
-<div class="widget-card-cover" style="background-image: url(assets/img/dashboard-cover.jpg)">
-<div class="cover-bg"></div>
+  
+<div class="col-xl-3 col-sm-6">
+  
+  <a href="#" class="widget-stats bg-gradient-blue text-white m-b-15">
+<div class="widget-stats-info">
+  <div class="widget-stats-title">NEW PURCHASE</div>
+<div class="widget-stats-value">
+  140
 </div>
-
-<div class="widget-card-content widget-hero bottom">
-<h1>Welcome back, Admin!</h1>
-<p class="m-b-0">I am glad to see you back online. Today is a great day!</p>
+<div class="widget-stats-desc">Today, 1:50PM</div>
 </div>
-</div>
-<div class="widget-card-col col-12 col-lg-6">
-<a href="#" class="widget-title-link bg-primary text-white">Dismiss</a>
-<h4 class="widget-title widget-title-inverse">GETTING STARTED</h4>
-<p class="widget-desc widget-desc-inverse m-b-25">We've assembled some links to get you started:</p>
-
-<div class="widget-list widget-list-inverse  widget-list-full-width">
-<a href="#" class="widget-list-item">
-<div class="widget-list-media">
-<i class="fa fa-plus bg-gradient-blue text-white icon"></i>
-</div>
-<div class="widget-list-content">
-<h4>Create New Post</h4>
-<p>Wordpress</p>
+<div class="widget-stats-icon">
+  <i class="fa fa-shopping-bag"></i>
 </div>
 </a>
-<a href="#" class="widget-list-item">
-<div class="widget-list-media">
-<i class="fa fa-store-alt bg-gradient-indigo text-white icon"></i>
+
 </div>
-<div class="widget-list-content">
-<h4>Manage Store</h4>
-<p>Product</p>
+
+
+<div class="col-xl-3 col-sm-6">
+  
+  <a href="#" class="widget-stats widget-stats-inverse bg-gradient-purple m-b-15">
+    <div class="widget-stats-info">
+      <div class="widget-stats-title">TOTAL VISITORS</div>
+      <div class="widget-stats-value">
+        22,930
+      </div>
+      <div class="widget-stats-desc">Today, 11:25AM</div>
+    </div>
+    <div class="widget-stats-icon">
+      <i class="fa fa-hand-pointer"></i>
+    </div>
+  </a>
+  
+</div>
+
+
+<div class="col-xl-3 col-sm-6">
+  
+  <a href="#" class="widget-stats widget-stats-inverse bg-gradient-pink m-b-15">
+    <div class="widget-stats-info">
+      <div class="widget-stats-title">NEW REGISTERED USER</div>
+      <div class="widget-stats-value">
+        92
+      </div>
+      <div class="widget-stats-desc">Today, 8:20AM</div>
+    </div>
+    <div class="widget-stats-icon">
+      <i class="fa fa-user-astronaut"></i>
+    </div>
+  </a>
+</div>
+
+
+<div class="col-xl-3 col-sm-6">
+  
+<a href="#" class="widget-stats widget-stats-inverse bg-gradient-orange m-b-15">
+  <div class="widget-stats-info">
+    <div class="widget-stats-title">PENDING INVOICE</div>
+<div class="widget-stats-value">
+  5
+</div>
+<div class="widget-stats-desc">Yesterday, 10:23PM</div>
+</div>
+<div class="widget-stats-icon">
+<i class="fa fa-file-invoice"></i>
 </div>
 </a>
-<a href="#" class="widget-list-item">
-<div class="widget-list-media">
-<i class="fa fa-credit-card bg-gradient-green text-white icon"></i>
-</div>
-<div class="widget-list-content">
-<h4>Manage Transaction</h4>
-<p>Report</p>
-</div>
-</a>
-<a href="#" class="widget-list-item">
-<div class="widget-list-media">
-<i class="fa fa-qrcode bg-gradient-orange icon"></i>
-</div>
-<div class="widget-list-content">
-<h4>Manage API Key</h4>
-<p>Library</p>
-</div>
-</a>
-<a href="#" class="widget-list-item">
-<div class="widget-list-media">
-<i class="fa fa-comments bg-gradient-red icon"></i>
-</div>
-<div class="widget-list-content">
-<h4>Manage Inbox</h4>
-<p>Email</p>
-</div>
-</a>
-<a href="#" class="widget-list-item">
-<div class="widget-list-media">
-<i class="fa fa-cog icon"></i>
-</div>
-<div class="widget-list-content">
-<h4>Settings</h4>
-<p>System</p>
-</div>
-</a>
-</div>
-
-</div>
-</div>
-
-</div>
-
-
-<div class="col-xl-4 col-lg-12">
-
-<div class="row">
-
-<div class="col-xl-12 col-sm-6 col-12">
-
-<div class="widget-card widget-card-inverse" style="height: 12.45rem;">
-
-<div class="widget-card-cover" style="background-image: url(assets/img/dashboard-cover-1.jpg)">
-<div class="cover-bg"></div>
-</div>
-
-
-<div class="widget-card-content">
-<div class="dropdown dropdown-icon pull-right">
-<a href="#" class="text-white" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-<div class="dropdown-menu dropdown-menu-right">
-<a href="#" class="dropdown-item">View</a>
-<a href="#" class="dropdown-item">Analytics</a>
-<a href="#" class="dropdown-item">Report</a>
-</div>
-</div>
-<h4 class="widget-title">POPULAR VIDEOS</h4>
-</div>
-
-
-<div class="widget-card-content bottom">
-<div class="widget-list widget-list-inverse widget-list-full-width">
-<a href="#" class="widget-list-item">
-<div class="widget-list-media"><i class="fa fa-play icon bg-gradient-blue"></i></div>
-<div class="widget-list-content">
-<h4>In the Heart of the Sea</h4>
-<p><i class="far fa-eye"></i> 1.2m views <i class="far fa-clock m-l-10"></i> 2h 2m</p>
-</div>
-</a>
-</div>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="col-xl-12 col-sm-6 col-12">
-
-<div class="widget-card widget-card-inverse" style="height: 12.45rem;">
-
-<div class="widget-card-cover" style="background-image: url(assets/img/dashboard-cover-2.jpg)">
-<div class="cover-bg"></div>
-</div>
-
-
-<div class="widget-card-content">
-<div class="dropdown dropdown-icon pull-right">
-<a href="#" class="text-white" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-<div class="dropdown-menu dropdown-menu-right">
-<a href="#" class="dropdown-item">View</a>
-<a href="#" class="dropdown-item">Analytics</a>
-<a href="#" class="dropdown-item">Report</a>
-</div>
-</div>
-<h4 class="widget-title">WEEKLY TRENDING MUSIC</h4>
-</div>
-
-
-<div class="widget-card-content bottom">
-<div class="widget-list widget-list-inverse widget-list-full-width">
-<a href="#" class="widget-list-item">
-<div class="widget-list-media"><i class="fa fa-headphones-alt icon bg-gradient-orange"></i></div>
-<div class="widget-list-content">
-<h4>Fireworks - Violing Cover</h4>
-<p><i class="far fa-eye"></i> 951.9m views <i class="far fa-clock m-l-10"></i> 3m 53s</p>
-</div>
-</a>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 </div>
 
@@ -626,10 +526,373 @@ Dashboard <small>overview, analytics & report</small>
 
 
 <div class="row">
+  
+  <div class="col-xl-4 col-md-6">
 
-<div class="col-xl-4 col-sm-6">
+    <div class="card m-b-15">
 
-<div class="card mb-3">
+      <div class="card-header">
+<h4 class="card-header-title">
+  OVERVIEW
+</h4>
+<div class="card-header-btn">
+  <div class="dropdown dropdown-icon">
+<a href="#" class="btn" data-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a href="#" class="dropdown-item">Today</a>
+<a href="#" class="dropdown-item">Yesterday</a>
+<a href="#" class="dropdown-item active">Last 7 days</a>
+<a href="#" class="dropdown-item">Last 28 days</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="card-body">
+<div class="text-center p-t-15 p-b-30">
+  <div class="f-w-600">Right now</div>
+  <div class="f-s-80 line-height-1 m-xs">
+<span data-id="active-user">5</span>
+</div>
+<div>active users on site</div>
+</div>
+<hr/>
+<ul class="list-inline m-b-10 text-center">
+  <li class="list-inline-item">
+<span class="circle circle-sm bg-gradient-blue-purple-to-right m-r-5"></span> Desktop
+</li>
+<li class="list-inline-item">
+  <span class="circle circle-sm bg-black-transparent-8 m-r-5"></span> Mobile
+</li>
+<li class="list-inline-item">
+  <span class="circle circle-sm bg-muted m-r-5"></span> Tablet
+</li>
+</ul>
+<div class="progress without-rounded-corner m-b-5">
+  <div class="progress-bar bg-gradient-blue-purple-to-right" data-id="desktop-user" style="width: 60%;">60%</div>
+<div class="progress-bar bg-black-transparent-8" data-id="mobile-user" style="width: 25%;">25%</div>
+<div class="progress-bar bg-muted" data-id="tablet-user" style="width: 15%;">15%</div>
+</div>
+<p class="f-s-12 text-muted m-b-0">
+* Data updates continuously and each pageview is reported seconds after it occurs.
+</p>
+</div>
+
+</div>
+
+
+<div class="card m-b-15">
+  
+<div class="card-header">
+  <h4 class="card-header-title">
+TOP REFERRALS
+</h4>
+<div class="card-header-btn">
+  <div class="dropdown">
+<a href="#" class="btn" data-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a href="#" class="dropdown-item">Today</a>
+<a href="#" class="dropdown-item">Yesterday</a>
+<a href="#" class="dropdown-item active">Last 7 days</a>
+<a href="#" class="dropdown-item">Last 28 days</a>
+</div>
+</div>
+</div>
+</div>
+
+<table class="table table-bordered table-th-without-border">
+  <thead>
+<tr>
+  <th width="1%"></th>
+<th>Source</th>
+<th width="15%" colspan="2" class="text-center text-nowrap">Active Users</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1.</td>
+<td><a href="#">wrapbootstrap.com</a></td>
+<td data-col="value" class="text-right">15</td>
+</tr>
+<tr>
+  <td>2.</td>
+<td><a href="#">bootswatch.com</a></td>
+<td data-col="value" class="text-right">6</td>
+</tr>
+<tr>
+  <td>3.</td>
+  <td><a href="#">google.com</a></td>
+  <td data-col="value" class="text-right">3</td>
+</tr>
+<tr>
+  <td>4.</td>
+<td><a href="#">(direct)</a></td>
+<td data-col="value" class="text-right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="card m-b-15">
+
+  <div class="card-header">
+<h4 class="card-header-title">
+  TOP SOCIAL TRAFFIC
+</h4>
+<div class="card-header-btn">
+  <div class="dropdown">
+<a href="#" class="btn" data-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a href="#" class="dropdown-item">Today</a>
+<a href="#" class="dropdown-item">Yesterday</a>
+<a href="#" class="dropdown-item active">Last 7 days</a>
+<a href="#" class="dropdown-item">Last 28 days</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<table class="table table-bordered table-th-without-border">
+  <thead>
+<tr>
+  <th width="1%"></th>
+  <th>Source</th>
+<th width="15%" colspan="2" class="text-center text-nowrap">Active Users</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+<td>1.</td>
+<td><a href="#">facebook.com</a></td>
+<td data-col="value" class="text-right">5</td>
+</tr>
+<tr>
+  <td>2.</td>
+<td><a href="#">twitter.com</a></td>
+<td data-col="value" class="text-right">3</td>
+</tr>
+<tr>
+<td>3.</td>
+<td><a href="#">youtube.com</a></td>
+<td data-col="value" class="text-right">1</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<div class="card m-b-15">
+
+  <div class="card-header">
+<h4 class="card-header-title">
+  TOP KEYWORDS
+</h4>
+<div class="card-header-btn">
+<div class="dropdown">
+  <a href="#" class="btn" data-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+  <a href="#" class="dropdown-item">Today</a>
+<a href="#" class="dropdown-item">Yesterday</a>
+<a href="#" class="dropdown-item active">Last 7 days</a>
+<a href="#" class="dropdown-item">Last 28 days</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<table class="table table-bordered table-th-without-border">
+<thead>
+  <tr>
+<th width="1%"></th>
+<th>Keyword</th>
+<th width="15%" colspan="2" class="text-center text-nowrap">Active Users</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1.</td>
+<td><a href="#">admin-template</a></td>
+<td data-col="value" class="text-right">5</td>
+</tr>
+<tr>
+<td>2.</td>
+<td><a href="#">dashboard</a></td>
+<td data-col="value" class="text-right">3</td>
+</tr>
+<tr>
+  <td>3.</td>
+<td><a href="#">apple-design</a></td>
+<td data-col="value" class="text-right">2</td>
+</tr>
+<tr>
+<td>4.</td>
+<td><a href="#">bootstrap</a></td>
+<td data-col="value" class="text-right">2</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-8 col-md-6">
+
+  <div class="card m-b-15">
+
+    <div class="card-header">
+<h4 class="card-header-title">
+  REAL-TIME MONITORING
+</h4>
+<div class="switcher switcher-success mt-n1 mb-n1">
+  <input type="checkbox" name="panel_header_switcher" id="panel_header_switcher" checked>
+<label for="panel_header_switcher"></label>
+</div>
+</div>
+
+<div class="card-body">
+<p class="text-muted f-s-12">
+* This is where you monitor user activity as it happens on your site.
+</p>
+<div style="height: 14.5rem">
+<canvas id="page-view-chart"></canvas>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="card m-b-15">
+  
+<div class="card-header">
+  <h4 class="card-header-title">
+    TOP ACTIVE PAGES
+  </h4>
+  <div class="card-header-btn">
+    <div class="dropdown dropdown-icon">
+<a href="#" class="btn" data-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a href="#" class="dropdown-item">Today</a>
+<a href="#" class="dropdown-item">Yesterday</a>
+<a href="#" class="dropdown-item active">Last 7 days</a>
+<a href="#" class="dropdown-item">Last 28 days</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="table-responsive">
+  <table class="table table-bordered table-th-without-border">
+<thead>
+  <tr>
+<th width="1%"></th>
+<th>Active Page</th>
+<th width="15%" colspan="2" class="text-center text-nowrap">Active Users</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1.</td>
+<td><a href="#">/cloud-boss/index</a></td>
+<td data-col="value" width="1%">12</td>
+<td data-col="percent">25.00%</td>
+</tr>
+<tr>
+  <td>2.</td>
+<td><a href="#">/qs1023.asp</a></td>
+<td data-col="value">10</td>
+<td data-col="percent">20.00%</td>
+</tr>
+<tr>
+  <td>3.</td>
+<td><a href="#">/search?key=mobile</a></td>
+<td data-col="value">8</td>
+<td data-col="percent">18.00%</td>
+</tr>
+<tr>
+  <td>4.</td>
+<td><a href="#">/items/94092</a></td>
+<td data-col="value">5</td>
+<td data-col="percent">11.11%</td>
+</tr>
+<tr>
+<td>5.</td>
+<td><a href="#">/items/93011</a></td>
+<td data-col="value">5</td>
+<td data-col="percent">11.11%</td>
+</tr>
+<tr>
+  <td>6.</td>
+<td><a href="#">/home</a></td>
+<td data-col="value">4</td>
+<td data-col="percent">10.00%</td>
+</tr>
+<tr>
+<td>7.</td>
+<td><a href="#">/track</a></td>
+<td data-col="value">2</td>
+<td data-col="percent">3.00%</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+
+
+<div class="card m-b-15">
+
+  <div class="card-header">
+<h4 class="card-header-title">
+TOP LOCATIONS
+</h4>
+<div class="card-header-btn">
+  <div class="dropdown dropdown-icon">
+<a href="#" class="btn" data-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+  <a href="#" class="dropdown-item">Today</a>
+  <a href="#" class="dropdown-item">Yesterday</a>
+<a href="#" class="dropdown-item active">Last 7 days</a>
+<a href="#" class="dropdown-item">Last 28 days</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card-body">
+  <div id="world-map" style="height: 18rem"></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="content" class="app-content">
+  
+  <h1 class="page-header">
+    Dashboard <small>overview, analytics & report</small>
+  </h1>
+  
+  
+ 
+
+
+<div class="row">
+  
+  <div class="col-xl-4 col-sm-6">
+    
+    <div class="card mb-3">
 
 <div class="card-header card-header-inverse">
 <h4 class="card-header-title">
@@ -1234,22 +1497,25 @@ Dark Header
 </div>
 
 
-<script src="assets/js/app.min.js" type="9d40ef8ca5128e596f023154-text/javascript"></script>
+<script src="assets/js/app.min.js" type="eb06c6c3f37e4075a6d16d9e-text/javascript"></script>
 
 
-<script src="assets/js/demo/dashboard.demo.js" type="9d40ef8ca5128e596f023154-text/javascript"></script>
-<script src="../dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/plugins/chart.js/dist/Chart.min.js" type="eb06c6c3f37e4075a6d16d9e-text/javascript"></script>
+<script src="assets/plugins/jvectormap/jquery-jvectormap.min.js" type="eb06c6c3f37e4075a6d16d9e-text/javascript"></script>
+<script src="assets/plugins/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js" type="eb06c6c3f37e4075a6d16d9e-text/javascript"></script>
+<script src="assets/js/demo/analytics.demo.js" type="eb06c6c3f37e4075a6d16d9e-text/javascript"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3Q0VGQKY3" type="9d40ef8ca5128e596f023154-text/javascript"></script>
-<script type="9d40ef8ca5128e596f023154-text/javascript">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3Q0VGQKY3" type="eb06c6c3f37e4075a6d16d9e-text/javascript"></script>
+<script type="eb06c6c3f37e4075a6d16d9e-text/javascript">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-Y3Q0VGQKY3');
 </script>
-<script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="9d40ef8ca5128e596f023154-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"801d211e6f86ec90","version":"2023.8.0","r":1,"b":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":100}' crossorigin="anonymous"></script>
+<script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="eb06c6c3f37e4075a6d16d9e-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"801d21305881ec90","version":"2023.8.0","r":1,"b":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":100}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from seantheme.com/admetro/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Sep 2023 08:35:19 GMT -->
+<!-- Mirrored from seantheme.com/admetro/analytics.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Sep 2023 08:35:24 GMT -->
 </html>

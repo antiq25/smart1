@@ -1,4 +1,4 @@
-/*
+x/*
 Template Name: ADMETRO - Responsive Admin Template Built with Bootstrap 4
 Version: 1.0.0
 Author: Sean Ngu
